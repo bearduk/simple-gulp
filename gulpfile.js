@@ -116,13 +116,11 @@ gulp.task('clean', function(){
     console.log('finished clean');
 })
 
-
 gulp.task('default', ['clean', 'styles', 'images', 'scripts'], function(){
     console.log('CB Initial default has completed...') // note that this function is optional, you don't need it at all if you don't want it, just list the array of tasks
 });
 
 // may be better to leave the image task our of default if it takes too long. Perhaps have a new task called 'golive' or 'publish' or such like that includes the image task.
-
 
 gulp.task('watch', ['default'], function () { // note that default is called here so that the default tasks run at least once before watch, well... watches
 	console.log('Starting watch task');
