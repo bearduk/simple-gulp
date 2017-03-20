@@ -11,7 +11,7 @@ class Person {
     }
 }
 
-var person = new Person('Christopher');
+var person = new Person('George');
 document.write(person.hello());
 
 console.log('Console says hi from main.js');
