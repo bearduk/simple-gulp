@@ -1,3 +1,9 @@
+// to do
+// picturefill
+// jshint/ lint
+// sprite building
+
+
 var gulp = require('gulp');
 
 // Use gulp-stats 
