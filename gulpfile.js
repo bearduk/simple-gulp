@@ -116,7 +116,7 @@ gulp.task('clean', function(){
     console.log('finished clean');
 })
 
-gulp.task('default', ['clean', 'styles', 'images', 'scripts'], function(){
+gulp.task('default', ['clean', 'styles', 'scripts'], function(){
     console.log('CB Initial default has completed...') // note that this function is optional, you don't need it at all if you don't want it, just list the array of tasks
 });
 
@@ -129,3 +129,6 @@ gulp.task('watch', ['default'], function () { // note that default is called her
 	gulp.watch(scripts_path, ['scripts']);
     gulp.watch(scss_path, ['styles']);
 });
+
+// build contains the 'images' compression (time hog)
+gulp.task('build', ['default', 'images']);
